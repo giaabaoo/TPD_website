@@ -43,6 +43,18 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Add any additional stylesheets or styles here */
+    .json-scrollable-container {
+      max-height: 100%; /* Adjust as needed */
+      overflow-y: auto;
+      border: 1px solid #ccc; /* Add a border for better visibility */
+      padding: 10px; /* Optional padding */
+    }
+  </style>
 </head>
 <body>
 
@@ -226,6 +238,7 @@
 
 
 <!-- Video carousel -->
+
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
@@ -273,11 +286,12 @@
   }
 
   // Fetch JSON from static/file1.json
-  fetchAndDisplayJson('static/jsons/conversation_1.json', 'json-container1');
+  fetchAndDisplayJson('static/file1.json', 'json-container1');
 
   // Fetch JSON from static/file2.json
-  fetchAndDisplayJson('static/jsons/conversation_4.json', 'json-container2');
+  fetchAndDisplayJson('static/file2.json', 'json-container2');
 </script>
+
 
 
 
