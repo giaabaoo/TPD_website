@@ -229,21 +229,40 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Sample conversations</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/conversation_1_small.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+      <div class="columns">
+        <!-- Left Column for Videos -->
+        <div class="column is-two-thirds">
+          <h2 class="title is-3">Sample conversations</h2>
+          <div id="results-carousel" class="carousel results-carousel">
+            <div class="item item-video1">
+              <video poster="" id="video1" autoplay controls muted loop height="100%">
+                <!-- Your video file here -->
+                <source src="static/videos/conversation_1_small.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="item item-video2">
+              <video poster="" id="video2" autoplay controls muted loop height="100%">
+                <!-- Your video file here -->
+                <source src="static/videos/conversation_4_small.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
         </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/conversation_4_small.mp4" type="video/mp4">
+
+        <!-- Right Column for JSON files -->
+        <div class="column is-one-third">
+          <div id="json-container1" class="json-scrollable-container">
+            <!-- Include JSON content from static/file1.json directly -->
+            <source src="static/jsons/conversation_1.json" type="application/json">
             Your browser does not support the video tag.
-          </video>
+          </div>
+          <div id="json-container2" class="json-scrollable-container">
+            <!-- Include JSON content from static/file2.json directly -->
+            <source src="static/jsons/conversation_4.json" type="application/json">
+            Your browser does not support the video tag.
+          </div>
         </div>
       </div>
     </div>
