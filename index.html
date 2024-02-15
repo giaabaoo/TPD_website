@@ -52,6 +52,10 @@
       border: 1px solid #ccc; /* Add a border for better visibility */
       padding: 10px; /* Optional padding */
     }
+
+    .video-container {
+      height: 100%; /* Make the video container fill its parent's height */
+    }
   </style>
 </head>
 <body>
@@ -246,18 +250,22 @@
           <h2 class="title is-3">Sample conversations</h2>
           <div id="results-carousel" class="carousel results-carousel">
             <div class="item item-video1">
-              <video poster="" id="video1" autoplay controls muted loop height="100%">
-                <!-- Your video file here -->
-                <source src="static/videos/conversation_1_small.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
+              <div class="video-container">
+                <video poster="" id="video1" autoplay controls muted loop height="100%">
+                  <!-- Your video file here -->
+                  <source src="static/videos/conversation_1_small.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
             </div>
             <div class="item item-video2">
-              <video poster="" id="video2" autoplay controls muted loop height="100%">
-                <!-- Your video file here -->
-                <source src="static/videos/conversation_4_small.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
+              <div class="video-container">
+                <video poster="" id="video2" autoplay controls muted loop height="100%">
+                  <!-- Your video file here -->
+                  <source src="static/videos/conversation_4_small.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
             </div>
           </div>
         </div>
@@ -278,7 +286,7 @@
     fetch(url)
       .then(response => response.json())
       .then(data => {
-        document.getElementById(containerId).innerText = JSON.stringify(data, null, 2);
+        document.getElementById(containerId).innerHTML = JSON.stringify(data, null, 2);
       })
       .catch(error => console.error(`Error fetching ${url}:`, error));
   }
@@ -289,6 +297,8 @@
   // Fetch JSON from static/file2.json
   fetchAndDisplayJson('static/jsons/conversation_4.json', 'json-container2');
 </script>
+
+
 
 
 
