@@ -47,14 +47,19 @@
   <style>
     /* Add any additional stylesheets or styles here */
     .json-scrollable-container {
-      max-height: 100%; /* Adjust as needed */
       overflow-y: auto;
       border: 1px solid #ccc; /* Add a border for better visibility */
       padding: 10px; /* Optional padding */
     }
 
     .video-container {
-      height: 100%; /* Make the video container fill its parent's height */
+      position: relative;
+      height: 100%;
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
     }
   </style>
 </head>
@@ -286,16 +291,21 @@
     fetch(url)
       .then(response => response.json())
       .then(data => {
-        document.getElementById(containerId).innerHTML = JSON.stringify(data, null, 2);
+        const jsonContainer = document.getElementById(containerId);
+        jsonContainer.innerHTML = JSON.stringify(data, null, 2);
+
+        // Set max height of json container based on video container height
+        const videoContainer = jsonContainer.previousElementSibling.querySelector('.video-container');
+        jsonContainer.style.maxHeight = `${videoContainer.clientHeight}px`;
       })
       .catch(error => console.error(`Error fetching ${url}:`, error));
   }
 
   // Fetch JSON from static/file1.json
-  fetchAndDisplayJson('static/jsons/conversation_1.json', 'json-container1');
+  fetchAndDisplayJson('static/file1.json', 'json-container1');
 
   // Fetch JSON from static/file2.json
-  fetchAndDisplayJson('static/jsons/conversation_4.json', 'json-container2');
+  fetchAndDisplayJson('static/file2.json', 'json-container2');
 </script>
 
 
