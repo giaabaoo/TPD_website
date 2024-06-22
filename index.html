@@ -2,63 +2,69 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/demo.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
   <title>MTP: A Dataset for Multi-Modal Turning Points in Casual Conversations</title>
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
   <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+
   <style>
-    .publication-awards {
-      text-align: center;
+    /* Add any additional stylesheets or styles here */
+    .json-scrollable-container {
+      overflow-y: auto;
+      border: 1px solid #ccc; /* Add a border for better visibility */
+      padding: 10px; /* Optional padding */
+    }
+
+    .video-container {
+      position: relative;
+      height: 100%;
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
     }
   </style>
 </head>
-
 <body>
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">
-              MTP: 
-              <span class="is-size-2">
-                <span class="is-size-1">M</span>ulti-
-                <span class="is-size-1">M</span>odal 
-                <span class="is-size-1">T</span>urning 
-                <span class="is-size-1">P</span>oints
-              </span>
-            </h1>
-            <h3 class="title is-3 publication-title">
-              A Dataset for Multi-Modal Turning Points in Casual Conversations
-            </h3>
-            <h4 class="subtitle is-5 publication-title">
-              ACL 2024 (main)
-            </h4>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</body>
 
-</html>
-
-<!-- <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>MTP: A Dataset for Multi-Modal Turning Points in Casual Conversations</title>
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
-  <style>
-    .publication-awards {
-      text-align: center;
-    }
-  </style>
-</head>
-
-<body>
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
@@ -66,7 +72,10 @@
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">MTP: <span class="is-size-2"><span class="is-size-1">M</span>ulti-<span class="is-size-1">M</span>odal <span class="is-size-1">T</span>urning <span class="is-size-1">P</span>oints</span></h1>
             <h3 class="title is-3 publication-title">A Dataset for Multi-Modal Turning Points in Casual Conversations</h3>
-            <h4 class="subtitle is-5 publication-awards">ACL 2024 (main)</h4>
+            <div class="has-text-centered">
+            <h5 class="subtitle is-5 publication-title has-text-red">ACL 2024 (main)</h5>
+          </div>
+          
             <div class="is-size-5 publication-authors">
               <span class="author-block">
                 <a href="https://github.com/giaabaoo" style="color:#f68946;font-weight:normal;">Gia-Bao Dinh Ho</a>,
@@ -134,42 +143,40 @@
       </div>
     </div>
   </section>
-</body>
-</html>
- -->
+  
 
-  <!-- <section class="hero teaser">
-    <div class="container is-max-desktop">
-      <div class="hero-body">
-        <img src="static/images/demo.png" alt="" style="width: 100%; height: auto;">
-        <h2 class="subtitle has-text-centered">
-          A turning point in a casual conversation between a woman and two men
-        </h2>
-      </div>
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/demo.png" alt="" style="width: 100%; height: auto;">
+      <h2 class="subtitle has-text-centered">
+         A turning point in a casual conversation between a woman and two men
+      </h2>
     </div>
-  </section> -->
+  </div>
+</section>
 
 
-  <!-- Paper abstract -->
-  <!-- <section class="section hero is-light">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Abstract</h2>
-          <div class="content has-text-justified">
-            <p>
-              Detecting critical moments, such as emotional outbursts or changes in decisions during conversations, is crucial for understanding shifts in human behavior and their consequences. Our work introduces a novel problem setting that focuses on these moments as "turning points (TPs)," accompanied by a meticulously curated, high-consensus, human-annotated multi-modal dataset. We provide precise timestamps, descriptions, and visual-textual evidence highlighting changes in emotions, behaviors, perspectives, and decisions at these turning points. Additionally, we propose a framework, TPMaven, which utilizes state-of-the-art vision-language models to construct a narrative from the videos and large language models. Evaluation results show that TPMaven achieves an F1-score of 0.88 in classification and 0.61 in detection, with additional explanations aligning with human expectations.
-            </p>
-          </div>
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Detecting critical moments, such as emotional outbursts or changes in decisions during conversations, is crucial for understanding shifts in human behavior and their consequences. Our work introduces a novel problem setting that focuses on these moments as "turning points (TPs)," accompanied by a meticulously curated, high-consensus, human-annotated multi-modal dataset. We provide precise timestamps, descriptions, and visual-textual evidence highlighting changes in emotions, behaviors, perspectives, and decisions at these turning points. Additionally, we propose a framework, TPMaven, which utilizes state-of-the-art vision-language models to construct a narrative from the videos and large language models. Evaluation results show that TPMaven achieves an F1-score of 0.88 in classification and 0.61 in detection, with additional explanations aligning with human expectations.
+          </p>
         </div>
       </div>
     </div>
-  </section> -->
-  <!-- End paper abstract -->
+  </div>
+</section>
+<!-- End paper abstract -->
 
 
 <!-- Image carousel -->
-<!-- <section class="hero is-small">
+<section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
@@ -179,24 +186,32 @@
           Emotional outbursts cause a significant changes in other speakers' states
         </h2>
       </div>
+      
     </div>
   </div>
 </div>
 </div>
-</section> -->
+</section>
 <!-- End image carousel -->
 
 
-<!-- <section class="hero is-small">
+
+
+
+<!-- Video carousel -->
+
+<section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div class="columns">
+        <!-- Left Column for Videos -->
         <div class="column is-full">
           <h2 class="title is-3">Sample conversations</h2>
           <div id="results-carousel" class="carousel results-carousel">
             <div class="item item-video1">
               <div class="video-container">
                 <video poster="" id="video1" autoplay controls muted loop height="100%">
+                  <!-- Your video file here -->
                   <source src="static/videos/conversation_1_small.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
@@ -205,6 +220,7 @@
             <div class="item item-video2">
               <div class="video-container">
                 <video poster="" id="video2" autoplay controls muted loop height="100%">
+                  <!-- Your video file here -->
                   <source src="static/videos/conversation_4_small.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
@@ -216,38 +232,45 @@
     </div>
   </div>
 </section>
- -->
 
 
 
 
 
-<!-- <section class="section" id="DownloadLinks">
+
+
+
+
+
+
+
+
+<section class="section" id="DownloadLinks">
   <div class="container is-max-desktop content">
     <h2 class="title">Download Links</h2>
     <p>Upon acceptance, we plan to release the source code and data. The full dataset comprising 340 conversations, totaling approximately 13.3 hours of video content. The dataset will include additional utterance-level videos, transcripts, speaker IDs, and annotation files for turning points. Currently, we have provided some sample files <a href="https://drive.google.com/drive/folders/1Su1dbNCdCu6U28C92q7-0EoyoPnBNsbx?usp=drive_link">in this link</a> to enhance the reviewing process.</p>
   </div>
-</section> -->
+</section>
 
 
 <!--BibTex citation -->
-  <!-- <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>@article{bigbangtheory,
-        title={The Big Bang Theory},
-        author={Chuck Lorre and Bill Prady},
-        year={2007},
-        journal={CBS},
-        url={https://www.cbs.com/shows/big_bang_theory/}
-      }</code></pre>
-    </div>
-  </section> -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{bigbangtheory,
+      title={The Big Bang Theory},
+      author={Chuck Lorre and Bill Prady},
+      year={2007},
+      journal={CBS},
+      url={https://www.cbs.com/shows/big_bang_theory/}
+    }</code></pre>
+  </div>
+</section>
 
 <!--End BibTex citation -->
 
 
-  <!-- <footer class="footer">
+  <footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
@@ -262,7 +285,9 @@
       </div>
     </div>
   </div>
-  </footer> -->
+</footer>
 
 
 
+  </body>
+  </html>
