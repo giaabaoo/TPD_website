@@ -2,27 +2,6 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/demo.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
-
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
 
   <title>MTP: A Dataset for Multi-Modal Turning Points in Casual Conversations</title>
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
@@ -43,56 +22,63 @@
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
 
-
   <style>
-    /* Add any additional stylesheets or styles here */
-    .json-scrollable-container {
-      overflow-y: auto;
-      border: 1px solid #ccc; /* Add a border for better visibility */
-      padding: 10px; /* Optional padding */
+    /* Reset link color */
+    a {
+        color: inherit; /* Inherit color from parent */
+        text-decoration: none; /* Remove underline */
     }
 
-    .video-container {
-      position: relative;
-      height: 100%;
+    .author-block a.monash {
+    color: #f68946 !important; /* VinUniversity color */
+    font-weight: normal;
     }
 
-    video {
-      width: 100%;
-      height: 100%;
+    .author-block a.vinuni {
+        color: #008AD7 !important; /* Monash color */
+        font-weight: normal;
     }
-  </style>
+
+    .author-block a.default {
+        color: #008AD7;
+        font-weight: normal;
+    }
+    
+</style>
 </head>
-<body>
 
+
+
+<body>
   <section class="hero">
     <div class="hero-body">
         <div class="container is-max-desktop">
             <div class="columns is-centered">
                 <div class="column has-text-centered">
-                    <h1 class="title is-1 publication-title">MTP: <span class="is-size-2"><span class="is-size-1">M</span>ulti-<span class="is-size-1">M</span>odal <span class="is-size-1">T</span>urning <span class="is-size-1">P</span>oints</span></h1>
+                    <h1 class="title is-1 publication-title">🔍 MTP: <span class="is-size-2"><span class="is-size-1">M</span>ulti-<span class="is-size-1">M</span>odal <span class="is-size-1">T</span>urning <span class="is-size-1">P</span>oints</span></h1>
                     <h3 class="title is-3 publication-title">A Dataset for Multi-Modal Turning Points in Casual Conversations</h3>
-                    <h5 class="subtitle is-5 publication-title" style="color: red;">ACL 2024 (main)</h5>
+                    <h5 class="subtitle is-5 publication-title" style="color: red; font-weight: bold;">ACL 2024 (main)</h5>
+
 
                     <div class="is-size-5 publication-authors">
-                        <span class="author-block">
-                            <a href="https://github.com/giaabaoo" style="color: #f68946; font-weight: normal;">Gia-Bao Dinh Ho</a>,
-                        </span>
-                        <span class="author-block">
-                            <a href="https://changweitan.com/" style="color: #008AD7; font-weight: normal;">Chang Wei Tan</a>,
-                        </span>
-                        <span class="author-block">
-                            <a href="https://www.linkedin.com/in/zahra-zamanzadeh" style="color: #f68946; font-weight: normal;">Zahra Zamanzadeh Darban</a>,
-                        </span>
-                        <span class="author-block">
-                            <a href="https://sites.google.com/monash.edu/mahsasalehi/home" style="color: #008AD7; font-weight: normal;">Mahsa Salehi</a>,
-                        </span>
-                        <span class="author-block">
-                            <a href="https://users.monash.edu.au/~gholamrh/" style="color: #f68946; font-weight: normal;">Gholamreza Haffari</a>,
-                        </span>
-                        <span class="author-block">
-                            <a href="https://bayesian-models.org/" style="color: #008AD7; font-weight: normal;">Wray Buntine</a>
-                        </span>
+                      <span class="author-block">
+                        <a href="https://github.com/giaabaoo" class="vinuni">Gia-Bao Dinh Ho</a>,
+                      </span>
+                      <span class="author-block">
+                          <a href="https://changweitan.com/" class="monash">Chang Wei Tan</a>,
+                      </span>
+                      <span class="author-block">
+                          <a href="https://www.linkedin.com/in/zahra-zamanzadeh" class="monash">Zahra Zamanzadeh Darban</a>,
+                      </span>
+                      <span class="author-block">
+                          <a href="https://sites.google.com/monash.edu/mahsasalehi/home" class="monash">Mahsa Salehi</a>,
+                      </span>
+                      <span class="author-block">
+                          <a href="https://users.monash.edu.au/~gholamrh/" class="monash">Gholamreza Haffari</a>,
+                      </span>
+                      <span class="author-block">
+                          <a href="https://bayesian-models.org/" class="vinuni">Wray Buntine</a>
+                      </span>
                     </div>
 
                     <div class="is-size-5 publication-authors">
@@ -103,11 +89,11 @@
                     <div class="column has-text-centered">
                         <div class="publication-links">
                             <span class="link-block">
-                                <a href="https://openreview.net/pdf?id=PLTjhCbTUa" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                                <a href="https://aclanthology.org/2024.acl-short.30.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
                                     <span class="icon">
                                         <i class="ai ai-arxiv"></i>
                                     </span>
-                                    <span>arXiv</span>
+                                    <span>Paper</span>
                                 </a>
                             </span>
                             <span class="link-block">
@@ -119,15 +105,15 @@
                                 </a>
                             </span>
                             <span class="link-block">
-                                <a href="https://giaabaoo.github.io/TPD_website/" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                                <a href="https://drive.google.com/file/d/1K8GUORTLHO-s7PNJHtHQ0RWHo1GaCye7/view?usp=sharing" target="_blank" class="external-link button is-normal is-rounded is-dark">
                                     <span class="icon">
                                         <i class="far fa-images"></i>
                                     </span>
-                                    <span>Demo</span>
+                                    <span>Poster</span>
                                 </a>
                             </span>
                             <span class="link-block">
-                                <a href="https://drive.google.com/drive/folders/1xz0RwB9WmUCXSMr4SHhH5GvaNQ78IqA4?usp=sharing" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                                <a href="https://drive.google.com/drive/folders/1xz0RwB9WmUCXSMr4SHhH5GvaNQ78IqA4?usp=drive_link" target="_blank" class="external-link button is-normal is-rounded is-dark">
                                     <span class="icon">
                                         <i class="fas fa-database"></i>
                                     </span>
@@ -174,58 +160,54 @@
 <!-- End paper abstract -->
 
 
+
+
+
 <!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <img src="static/images/demo.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Emotional outbursts cause a significant changes in other speakers' states
-        </h2>
+        <div class="item">
+          <img src="static/images/demo.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Emotional outbursts significantly change other speakers' states
+          </h2>
+        </div>
       </div>
-      
     </div>
   </div>
-</div>
-</div>
 </section>
+
 <!-- End image carousel -->
 
 
+<section class="hero teaser"></section>
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/formulation.png" alt="" style="width: 100%; height: auto;">
+    </div>
+  </div>
+</section>
 
 
-
-<!-- Video carousel -->
 
 <section class="hero is-small">
   <div class="hero-body">
-    <div class="container">
-      <div class="columns">
-        <!-- Left Column for Videos -->
-        <div class="column is-full">
-          <h2 class="title is-3">Sample conversations</h2>
-          <div id="results-carousel" class="carousel results-carousel">
-            <div class="item item-video1">
-              <div class="video-container">
-                <video poster="" id="video1" autoplay controls muted loop height="100%">
-                  <!-- Your video file here -->
-                  <source src="static/videos/conversation_1_small.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-            </div>
-            <div class="item item-video2">
-              <div class="video-container">
-                <video poster="" id="video2" autoplay controls muted loop height="100%">
-                  <!-- Your video file here -->
-                  <source src="static/videos/conversation_4_small.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-            </div>
-          </div>
+    <div class="container is-max-desktop">
+      <h2 class="title">Sample Conversations</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="video-container">
+          <video id="video1" autoplay controls muted loop style="width: 100%;">
+            <source src="static/videos/conversation_1_small.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="video-container">
+          <video id="video2" autoplay controls muted loop style="width: 100%;">
+            <source src="static/videos/conversation_4_small.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
     </div>
@@ -233,21 +215,24 @@
 </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
 <section class="section" id="DownloadLinks">
   <div class="container is-max-desktop content">
-    <h2 class="title">Download Links</h2>
-    <p>Upon acceptance, we plan to release the source code and data. The full dataset comprising 340 conversations, totaling approximately 13.3 hours of video content. The dataset will include additional utterance-level videos, transcripts, speaker IDs, and annotation files for turning points. Currently, we have provided some sample files <a href="https://drive.google.com/drive/folders/1Su1dbNCdCu6U28C92q7-0EoyoPnBNsbx?usp=drive_link">in this link</a> to enhance the reviewing process.</p>
+    <h2 class="title">Dataset Usage</h2>
+    <p>
+      <u>
+          <a href="https://drive.google.com/file/d/1sHigqVVqr8h5X_wxA2m8sGUB7vvKWxBS/view?usp=sharing" class="default">Here</a>
+      </u> 
+      is the Data Usage Agreement. Please sign it and send the signed document back to this email: 
+      dinhhogiabao@gmail.com with the subject title: "Request Access for the MTP Dataset." We will send the full dataset link to your email upon receiving the signed document.
+  </p>
+  <p>
+    The full dataset comprising 340 conversations, totaling approximately 13.3 hours of video content. The dataset will include additional utterance-level videos, transcripts, speaker IDs, and annotation files for turning points. Currently, we have provided some sample files 
+    <u>
+        <a href="https://drive.google.com/drive/folders/1Su1dbNCdCu6U28C92q7-0EoyoPnBNsbx?usp=drive_link">in this link</a>
+    </u> 
+    to enhance the reviewing process.
+</p>
+
   </div>
 </section>
 
